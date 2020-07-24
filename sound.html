@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title>index.html</title>
+<meta class= = "UTF-8"/>    
+    <link rel="stylesheet"href="styles.css">
+    <style>
+        p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Why Anime is Good</h1>
+    <h3>Anime is Good, Let Me Prove It</h3>
+        <ul id = "navigation">
+          <li class = "navbar">
+              <a class = "navitem" href="index.html">HOME</a>
+          </li>  
+          <li class = "navbar">
+            <a class = "navitem" href="video.html">VIDEO</a>
+        </li>  
+        <li class = "navbar">
+            <a class = "navitem" href="game.html">GAME</a>
+            <li class = "navbar">
+                <a class = "navitem" href="sound.html">SOUND</a>
+            </li>    
+        </li>      
+    </ul>
+    <button class = "soundbutton" onclick= "playSound('hit_with_frying_pan_y')">
+    Click to Play Sound
+    </button>
+<script>
+function playSound(sound) {
+    var snd = new Audio (sound + ".wav");
+    snd.play();
+}
+
+
+
+</script>
+      
+    </body>
+    </html>
